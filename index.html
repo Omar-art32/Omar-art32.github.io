@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="solrac">
+    <meta name="description" content="My Projects TW 2">
+    <meta name="keywords" content="HTML, CSS, JS, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>My Profile</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <!-- Bootstrap CSS offline -->
+    <!--link href="./css/bootstrap.min.css" rel="stylesheet"-->
+    <!-- Bootstrap Icons offline -->
+    <!--link href="./icons/bootstrap-icons.css" rel="stylesheet"-->
+
+
+    <!-- Bootstrap CSS online -->
+    < <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <!-- Bootstrap Icons online -->
+    < <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
+    <!-- My CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" width="50" alt="My logo"> 
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">Referencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Me -->
+    <section class="myclass aling-items-stretch">
+        <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
+            <img class="myclass-pic rounded-circle" src="./images/foto_perfil.png" alt="My selfie">
+            <h1>Hola, soy Omar</h1>
+            <h2>Omarcin Tuba</h2>
+        </div>
+        <div class="myclass-label">            
+            <img class="myclass-imagen img-fluid" src="./images/Happy_computer.gif" alt="think twice code once">
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="aboutme" class="about-me section-oscura">
+    <div class="contenedor">
+        <h2 class="seccion-titulo">👋 Conóceme</h2>
+        <p class="seccion-texto" style="text-align: justify;">
+            ¡Hola! Soy un estudiante entusiasta del desarrollo de software con una profunda pasión por la tecnología y la innovación. Actualmente, estoy perfeccionando mis habilidades en <strong>Java</strong> para crear proyectos que no solo sean funcionales, sino que también contribuyan al avance tecnológico. 🚀
+        </p>
+        <p class="seccion-texto" style="text-align: justify;">
+            Mis metas incluyen:
+        </p>
+            <ul class="seccion-texto" style="text-align: justify;">
+                <li>🎓 Finalizar mi licenciatura en informática con especialización en desarrollo de software.</li>
+                <li>📜 Obtener certificaciones en <strong>inteligencia artificial</strong> y <strong>redes</strong>.</li>
+                <li>💻 Desarrollar proyectos innovadores utilizando Java.</li>
+                <li>🤝 Fortalecer mis habilidades de <strong>liderazgo</strong> y <strong>gestión de equipos</strong>.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experiencia section-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Programming -->
+                <div class="experiencia-columna col-12 col-md-4">                    
+                    <p class="columna experiencia-title">Programación</p>                    
+                    <i class="bi-braces"></i>
+                    <p>
+                        Soy un apasionado de la programación y siempre busco aprender y mejorar mis habilidades a través de proyectos sencillos en el desarrollo de software.                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-primary">C</span>
+                        <span class="badge bg-primary">Java</span>                        
+                    </div>
+                </div>
+                <!-- Base de datos -->
+                <div class="experiencia-columna col-12 col-md-4">                    
+                    <p class="columna experiencia-title">Bases de Datos</p>
+                    <i class="bi bi-database"></i>
+
+                    
+                    <p>
+                        Experiencia en diseño y gestión de bases de datos SQL, con énfasis en MariaDB.
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge bg-primary">SQL</span>                        
+                        <span class="badge bg-primary">MariaDB</span>                       
+                    </div>
+                </div>
+                <!-- Electronica -->
+                <div class="experiencia-columna col-12 col-md-4">
+                    <p class="columna experiencia-title">Electrónica</p>
+                    <i class="bi bi-robot"></i>
+                    <p>
+                        Conocimientos en circuitos digitales y analógicos, así como en diseño de sistemas electrónicos.
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge bg-primary">Circuitos</span>                        
+                        <span class="badge bg-primary">Microcontroladores</span>                        
+                        <span class="badge bg-primary">Sistemas Embebidos</span>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="proyectos section-clara d-flex flex-column">
+        <h2 class="seccion-titulo">Mis Proyectos informáticos</h2>
+        <h3 class="seccion-descripcion">    Durante mi carrera, he diseñado y colaborado en proyectos que me gustaría presentar a continuación.
+        </h3>
+        <!-- gallery -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/proyecto1.avif" alt="Project 1">
+                        <div class="overlay">
+                            <p>catálogo de instrumentos en Java</p>
+                            <div class="icons-project">
+                                <a href=https://github.com/Omar-art32/Catalogo_Instrumentos target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-feather"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/c.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <p>Proyectos elaborados en C</p>
+                            <div class="icons-project">
+                                <a href=https://github.com/Omar-art32/proyectos_C target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-feather"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/automata.jpg" alt="Project 1">
+                        <div class="overlay">
+                            <p>Teoria de aútomatas: en C</p>
+                            <div class="icons-project">
+                                <a href=https://github.com/Omar-art32/Automatas-codigos-en-c target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-feather"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Omar-art32" target="_blank" rel="noopener noreferrer" class="btn btn-info">
+            Más chambas
+            <i class="bi bi-arrow-right-circle"></i>
+        </a>
+        
+    </section>
+
+    <!-- Tips -->
+    <section class="tips justify-content-start">
+        <h2 class="seccion-titulo">Tips</h2>
+        <div class="card">
+            <div class="card-header">
+                Sobre Programación
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href=http://www.mfbarcell.es/docencia_uned/fund_inf_ing/libros/-%20Como%20Programar%20en%20Java%20Deitel.pdf target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Cómo Programar en Java (Deitel)</li>
+                </a>
+                <a href=https://docs.oracle.com/en/java/javase/22/ target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">🧑‍💻 Divide y vencerás: El arte de la modularidad</li>
+                </a>
+                <a href=https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">🧐 Depurar no es opcional, es obligatorio</li>
+                </a>
+                <a href=https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">⚡ Atajos de teclado: programa más rápido que tus pensamientos</li>
+                </a>
+                <a href=https://git-scm.com/book/es/v2 target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">🔥 Versiona tu código o prepárate para el desastre</li>
+                </a>
+            </ul>
+        </div>
+        <a href="" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Más tips
+                <i class="bi-arrow-right-circle"></i>
+            </button>
+        </a>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="recomendaciones section-clara">
+        <h2 class="seccion-titulo">Recomendaciones</h2>
+        <h3 class="seccion-descripcion">Testimonios de colegas y amigos que destacan el valor de nuestras colaboraciones.</h3>
+        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <img src="./images/niño.jpg" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"><p class="recomendacion-texto">"Allan es una persona excepcional. Su habilidad para resolver problemas complejos y su enfoque metódico lo convierten en un valioso activo en cualquier equipo. Es un profesional comprometido que siempre busca la excelencia en su trabajo."</p>
+                    .</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Allan Cruz</p>
+                        <p class="cargo">Un poco introvertido pero buen compañero</p>
+                    </div>                    
+                </div>
+            </div> 
+            <!-- 
+            <div class="carousel-item">
+                <div class="container">
+                    <img src="./images/squirrel.png" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum itaque sunt. Voluptas, nobis! Inventore fugit eos corrupti odit eius dolorem.</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Woody</p>
+                        <p class="cargo">Amigo fiel</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <img src="./images/squirrel.png" class="recomendacion-imagen rounded-circle" alt="...">
+                    <p class="recomendacion-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum itaque sunt. Voluptas, nobis! Inventore fugit eos corrupti odit eius dolorem.</p>
+                    <div class="recomendacion-info">
+                        <p class="amigo">Rexona</p>
+                        <p class="cargo">Nunca te abandona</p>
+                    </div>                    
+                </div>
+            </div>
+            -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contactme" class="contact section-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        "¡Hablemos!"
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        "Siempre busco aprender y crecer."
+                    </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:">
+                            <button type="button">
+                                omarjimenezher@gmail.com
+                                <i class="bi-envelope-check"></i>
+                            </button>
+                        </a>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
+        <img class="footer-icon" src="./images/foto_perfil.png" alt="Logo profile">
+        <p class="footer-text text-center">
+            "Cada paso que das te acerca a tu meta.  <br> Nunca subestimes el poder de tu perseverancia." 🌟
+        </p>
+        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
+            
+            <a href=https://www.facebook.com/share/1BM9hK3EWG/ target="_blank" rel="noopener noreferrer">
+                <i class="bi-facebook"></i>
+            </a>
+            <a href=https://github.com/Omar-art32 target="_blank" rel="noopener noreferrer">
+                <i class="bi-github"></i>
+            </a>
+            <a href=www.linkedin.com/in/omar-jiménez-12228b224 target="_blank" rel="noopener noreferrer">
+                <i class="bi-linkedin"></i>
+            </a>
+            <a href=https://www.instagram.com/omar_jh04/profilecard/?igsh=MTl2NTFvMno5bDVqOA== target="_blank" rel="noopener noreferrer">
+                <i class="bi-instagram"></i>
+            
+        </div>
+        <div class="author"> omarjimnezher@gmail.com (2024) &#169; </div>
+    </footer>
+
+
+    <!-- Bootstrap JS offline -->
+    <!-- script src="./js/bootstrap.min.js"></script-->    
+    <!-- Bootstrap JS online -->
+    < <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>>
+    <!-- My JS -->
+    <script src="./js/main.js"></script>    
+</body>
+</html>
