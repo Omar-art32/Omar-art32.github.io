@@ -59,6 +59,7 @@
 }
 #aboutme {
     cursor: url('curso.cur'), auto;
+    text-align: justify;
 }
 
 #projects {
@@ -69,10 +70,9 @@
     color: white;
     background-color: var(--color_0);
 }
-
 .about-me .contenedor {
     max-width: 600px;
-    text-align: justify;
+    
 }
 
 .seccion-titulo {
