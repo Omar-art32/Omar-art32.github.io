@@ -1,3 +1,4 @@
+
 :root {
     --color_0: #3F3D56;
     --color_1: #6C63FF;
@@ -26,6 +27,7 @@
     background-color: #f5f6f7;
     min-height: 450px;
     text-align: center;
+    
 }
 
 .myclass-main {
@@ -48,6 +50,19 @@
 .about-me {
     height: 500px;
     padding: 10px;
+    
+}
+
+#aboutme h2 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px;
+}
+#aboutme {
+    cursor: url('curso.cur'), auto;
+}
+
+#projects {
+    cursor: url('handwriting.cur'), auto;
 }
 
 .section-oscura {
@@ -57,16 +72,18 @@
 
 .about-me .contenedor {
     max-width: 600px;
-    text-align: center;
+    text-align: justify;
 }
 
 .seccion-titulo {
     font-size: 2rem;
     padding: 15px 0;
+    
 }
 
 .seccion-texto {
     font-size: 1.2rem;
+    
 }
 
 .experiencia {
@@ -117,6 +134,8 @@
     padding: 40px;
 }
 
+
+
 .proyectos img {
     height: 100%;
     width: 100%;
@@ -139,6 +158,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    
 }
 
 .overlay p {
@@ -251,6 +271,8 @@ h1 {
     margin-bottom: 0;
 }
 
+
+
 .recomendacion-info .amigo {
     color: #2F2E41;
     font-size: 1.2rem;
@@ -357,6 +379,9 @@ footer {
     color: var(--color_4);
     padding: 20px;
 }
+
+
+
 
 
 /* Responsive */
