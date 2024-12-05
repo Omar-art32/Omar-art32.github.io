@@ -58,12 +58,16 @@
     margin-bottom: 20px;
 }
 #aboutme {
-    cursor: url('curso.cur'), auto;
     text-align: justify;
 }
 
+#aboutme{
+    /*cursor: url('curso.cur'), auto;*/
+    cursor: url(https://cur.cursors-4u.net/anime/ani-2/ani209.cur), auto;
+}
+
 #projects {
-    cursor: url('handwriting.cur'), auto;
+    cursor: url(https://cur.cursors-4u.net/nature/nat-7/nat689.cur), auto;
 }
 
 .section-oscura {
@@ -83,7 +87,6 @@
 
 .seccion-texto {
     font-size: 1.2rem;
-    
 }
 
 .experiencia {
