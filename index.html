@@ -10,7 +10,7 @@
     
     
     <!-- Title -->
-    <title>My Profile</title>
+    <title>Mi Portafolio</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
@@ -23,7 +23,7 @@
     <!-- Bootstrap CSS online -->
     < <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <!-- Bootstrap Icons online -->
-    < <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- My CSS -->
     <link href="./css/style.css" rel="stylesheet">
 
@@ -53,20 +53,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Yuji+Mai&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Precarga - Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler"
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar-toggler">
+            <!-- 
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo.png" width="50" alt="My logo"> 
-                </a>
-                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                </a> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Proyectos</a>
@@ -75,88 +84,167 @@
                         <a class="nav-link" href="#references">Referencias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactme">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
-    <!-- Me -->
-    <section class="myclass aling-items-stretch">
-        
-        <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
-            <img class="myclass-pic rounded-circle" src="./images/foto_perfil.png" alt="My selfie">
-            <h1 style="font-family: 'Edu AU VIC WA NT Arrows', cursive;">Hola, soy Omar</h1>
-            <h2 >Omarcin Tuba</h2>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Hola, soy <span>Omar</span></h1>
+                    <p>Estudiante de Licenciatura en Informática, entusiasta de la programación backend y de construir cosas que funcionen, aunque no siempre se vean bonitas.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn btn-outline">Contáctame</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="./images/foto_perfil.png" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <div class="myclass-label">            
-            <img class="myclass-imagen img-fluid" src="./images/Happy_computer.gif" alt="think twice code once">
-        </div>
+        <a href="#about" class="mouse-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <!-- About me -->
-    <section id="aboutme" class="about-me section-oscura">
-    <div class="contenedor">        
-        <h2 style="font-family:'Yuji Mai', cursive" class="seccion-titulo">👋 Conóceme</h2>
-        <p style="font-family: 'Roboto Condensed', sans-serif" class="seccion-texto" style="text-align: justify;">
-            ¡Hola! Soy un estudiante entusiasta del desarrollo de software con una profunda pasión por la tecnología y la innovación. Actualmente, estoy perfeccionando mis habilidades en <strong>Java</strong> para crear proyectos que no solo sean funcionales, sino que también contribuyan al avance tecnológico. 🚀
-        </p>
-        <p style="font-family: 'Roboto Condensed', sans-serif" class="seccion-texto" style="text-align: justify;">
-            Mis metas incluyen:
-        </p>
-            <ul style="font-family: 'Roboto Condensed', sans-serif" class="seccion-texto" style="text-align: justify;">
-                <li>🎓 Finalizar mi licenciatura en informática con especialización en desarrollo de software.</li>
-                <li>📜 Obtener certificaciones en <strong>inteligencia artificial</strong> y <strong>redes</strong>.</li>
-                <li>💻 Desarrollar proyectos innovadores utilizando Java.</li>
-                <li>🤝 Fortalecer mis habilidades de <strong>liderazgo</strong> y <strong>gestión de equipos</strong>.</li>
-            </ul>
-        </div>
-    </section>
-
-
-    <!-- Experience -->
-    <section class="experiencia section-clara">
-        <div class="container text-center">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Mí</h2>
+            </div>
             <div class="row">
-                <!-- Programming -->
-                <div class="experiencia-columna col-12 col-md-4">                    
-                    <p class="columna experiencia-title">Programación</p>                    
-                    <i class="bi-braces"></i>
-                    <p>
-                        Soy un apasionado de la programación y siempre busco aprender y mejorar mis habilidades a través de proyectos sencillos en el desarrollo de software.                    </p>
-                    <div class="badge-contenedor">                        
-                        <span class="badge bg-primary">Python</span>
-                        <span class="badge bg-primary">C</span>
-                        <span class="badge bg-primary">Java</span>                        
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img">
+                        <img src="/api/placeholder/500/500" alt="About Me" class="img-fluid">
                     </div>
                 </div>
-                <!-- Base de datos -->
-                <div class="experiencia-columna col-12 col-md-4">                    
-                    <p class="columna experiencia-title">Bases de Datos</p>
-                    <i class="bi bi-database"></i>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-content">
+                        <h3>Estudiante de Desarrollo de Software</h3>
+                        <p>
+                            ¡Hola! Soy un estudiante entusiasta del desarrollo de software con una profunda pasión por la tecnología y la innovación. Actualmente, estoy perfeccionando mis habilidades en Java para crear proyectos que no solo sean funcionales, sino que también contribuyan al avance tecnológico. 🚀
+                        </p>
+                        <p>
+                            Mi objetivo es combinar el conocimiento académico con el desarrollo práctico, generando soluciones modernas y efectivas. Me encuentro enfocado en completar mi formación y adquirir experiencia en áreas clave como inteligencia artificial y redes.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="skill-progress">
+                                    <p>
+                                        <span>Java</span>
+                                        <span>80%</span>
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-progress">
+                                    <p>
+                                        <span>Inteligencia Artificial (en formación)</span>
+                                        <span>60%</span>
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-progress">
+                                    <p>
+                                        <span>Redes (en formación)</span>
+                                        <span>65%</span>
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skill-progress">
+                                    <p>
+                                        <span>Gestión de Equipos</span>
+                                        <span>70%</span>
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    
-                    <p>
-                        Experiencia en diseño y gestión de bases de datos SQL, con énfasis en MariaDB.
-                    </p>
-                    <div class="badge-contenedor">                        
-                        <span class="badge bg-primary">SQL</span>                        
-                        <span class="badge bg-primary">MariaDB</span>                       
+     <!-- Services Section - Mantenido pero puedes eliminarlo si no es necesario -->
+     <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mis Servicios</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Desarrollo Web</h4>
+                        <p>Creo sitios web responsivos y funcionales utilizando las últimas tecnologías para brindar la mejor experiencia al usuario.</p>
                     </div>
                 </div>
-                <!-- Electronica -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-title">Electrónica</p>
-                    <i class="bi bi-robot"></i>
-                    <p>
-                        Conocimientos en circuitos digitales y analógicos, así como en diseño de sistemas electrónicos.
-                    </p>
-                    <div class="badge-contenedor">                        
-                        <span class="badge bg-primary">Circuitos</span>                        
-                        <span class="badge bg-primary">Microcontroladores</span>                        
-                        <span class="badge bg-primary">Sistemas Embebidos</span>                          
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Diseño Responsive</h4>
+                        <p>Aseguro que tus sitios web se vean perfectos en todos los dispositivos, desde móviles hasta pantallas de escritorio.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Diseño UI/UX</h4>
+                        <p>Diseño interfaces intuitivas y atractivas que mejoran la experiencia del usuario y aumentan las conversiones.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Desarrollo Back-End</h4>
+                        <p>Implemento servidores robustos, APIs y bases de datos para potenciar tus aplicaciones web.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>SEO</h4>
+                        <p>Optimizo tu sitio web para los motores de búsqueda, aumentando tu visibilidad y tráfico orgánico.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4>Control de Versiones</h4>
+                        <p>Implemento sistemas de control de versiones para mantener tu código seguro y facilitar la colaboración.</p>
                     </div>
                 </div>
             </div>
@@ -164,195 +252,333 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="proyectos section-clara d-flex flex-column">
-        <h2 style="font-family:'Yuji Mai', cursive" class="seccion-titulo">Mis Proyectos informáticos</h2>
-        <h3 class="seccion-descripcion">    Durante mi carrera, he diseñado y colaborado en proyectos que me gustaría presentar a continuación.
-        </h3>
-        <!-- gallery -->
-        <div class="container text-center proyectos-contenedor">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/catalago.png" alt="Project 1">
-                        <div class="overlay">
-                            <p>catálogo de instrumentos en Java</p>
-                            <div class="icons-project">
-                                <a href=https://github.com/Omar-art32/Catalogo_Instrumentos target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-feather"></i>
-                                </a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyectos</h2>
+            </div>
+        </div>
+
+        <div class="portfolio-filter" data-aos="fade-up" data-aos-duration="1000">
+            <button class="active" data-filter="*">Todos</button>
+            <button data-filter=".web">Web</button>
+            <button data-filter=".app">Apps</button>
+            <button data-filter=".mobile">Mobile</button>
+        </div>
+        <!-- AGREGAR MAS PROYECTOS --> 
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="fade-up" data-aos-duration="1000">
+                <div class="portfolio-inner">
+                    <img src="imagen" alt="Portfolio Item" class="img-fluid portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h5>Web del Clima</h5>
+                            <p>Desarrollo Web</p>
+                            <div class="portfolio-links">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="#"><i class="fas fa-search-plus"></i></a>
                             </div>
-                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/c.png" alt="Project 1">
-                        <div class="overlay">
-                            <p>Proyectos elaborados en C</p>
-                            <div class="icons-project">
-                                <a href=https://github.com/Omar-art32/proyectos_C target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-feather"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/maquina.png" alt="Project 1">
-                        <div class="overlay">
-                            <p>Teoria de aútomatas: en C</p>
-                            <div class="icons-project">
-                                <a href=https://github.com/Omar-art32/Automatas-codigos-en-c target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-feather"></i>
-                                </a>
-                            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="portfolio-inner">
+                    <img src="imagen1" alt="Portfolio Item" class="img-fluid portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h5>Catalogo de Instrumentos M.</h5>
+                        <p>Desarrollo de Software</p>
+                        <div class="portfolio-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fas fa-search-plus"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <a href="https://github.com/Omar-art32" target="_blank" rel="noopener noreferrer" class="btn btn-info">
-            Más chambas
-            <i class="bi bi-arrow-right-circle"></i>
-        </a>
-        
+
     </section>
-    <!-- Tips -->
-    <section class="tips justify-content-start">
-        <h2 class="seccion-titulo">Tips</h2>
-        <div class="card">
-            <div class="card-header">
-                Sobre Programación
+    <!-- Tips Section -->
+    <section id="tips" class="tips py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tips de Desarrollo</h2>
             </div>
-            <ul class="list-group list-group-flush">
-                <a href=http://www.mfbarcell.es/docencia_uned/fund_inf_ing/libros/-%20Como%20Programar%20en%20Java%20Deitel.pdf target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Cómo Programar en Java (Deitel)</li>
-                </a>
-                <a href=https://docs.oracle.com/en/java/javase/22/ target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">🧑‍💻 Divide y vencerás: El arte de la modularidad</li>
-                </a>
-                <a href=https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">🧐 Depurar no es opcional, es obligatorio</li>
-                </a>
-                <a href=https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">⚡ Atajos de teclado: programa más rápido que tus pensamientos</li>
-                </a>
-                <a href=https://git-scm.com/book/es/v2 target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">🔥 Versiona tu código o prepárate para el desastre</li>
-                </a>
-            </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tips-container" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row g-4">
+                            <!-- Tip Card 1 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card">
+                                    <div class="tip-icon">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div class="tip-content">
+                                        <h4>Aprende Java</h4>
+                                        <p>Fundamentos del lenguaje y buenas prácticas para programadores.</p>
+                                        <a href="http://www.mfbarcell.es/docencia_uned/fund_inf_ing/libros/-%20Como%20Programar%20en%20Java%20Deitel.pdf" target="_blank" rel="noopener noreferrer" class="tip-link">
+                                            Cómo Programar en Java (Deitel) <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Tip Card 2 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card">
+                                    <div class="tip-icon">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                    </div>
+                                    <div class="tip-content">
+                                        <h4>Modularidad</h4>
+                                        <p>Técnicas efectivas de organización y estructuración de código.</p>
+                                        <a href="https://docs.oracle.com/en/java/javase/22/" target="_blank" rel="noopener noreferrer" class="tip-link">
+                                            🧑‍💻 Divide y vencerás <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Tip Card 3 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card">
+                                    <div class="tip-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <div class="tip-content">
+                                        <h4>Depuración</h4>
+                                        <p>Estrategias para encontrar y solucionar errores de forma eficiente.</p>
+                                        <a href="https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html" target="_blank" rel="noopener noreferrer" class="tip-link">
+                                            🧐 La depuración es obligatoria <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Tip Card 4 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card">
+                                    <div class="tip-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="tip-content">
+                                        <h4>Productividad</h4>
+                                        <p>Domina atajos de teclado para programar con mayor eficiencia.</p>
+                                        <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" rel="noopener noreferrer" class="tip-link">
+                                            ⚡ Atajos de teclado <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Tip Card 5 -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card">
+                                    <div class="tip-icon">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <div class="tip-content">
+                                        <h4>Control de Versiones</h4>
+                                            <p>Aprende a manejar Git para proteger y gestionar tus proyectos.</p>
+                                        <a href="https://git-scm.com/book/es/v2" target="_blank" rel="noopener noreferrer" class="tip-link">
+                                            🔥 Versiona tu código <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Tip Card 6 (Placeholder for More) -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="tip-card tip-more">
+                                    <div class="tip-more-content">
+                                        <h4>¿Quieres más?</h4>
+                                        <p>Descubre más recursos y consejos para mejorar tus habilidades.</p>
+                                        <a href="#" class="btn btn-primary">Explorar más tips <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-info">Más tips
-                <i class="bi-arrow-right-circle"></i>
-            </button>
-        </a>
     </section>
 
     <!-- References -->
-    <section id="references" class="recomendaciones section-clara">
-        <h2 class="seccion-titulo">Recomendaciones</h2>
-        <h3 class="seccion-descripcion">Testimonios de colegas y amigos que destacan el valor de nuestras colaboraciones.</h3>
-        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="references" class="references">
+        <div class="container">
+            <div class="section-title">
+                <h2>Referencias</h2>
             </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <img src="./images/niño.jpg" class="recomendacion-imagen rounded-circle" alt="...">
-                    <p class="recomendacion-texto"><p class="recomendacion-texto">"Allan es una persona excepcional. Su habilidad para resolver problemas complejos y su enfoque metódico lo convierten en un valioso activo en cualquier equipo. Es un profesional comprometido que siempre busca la excelencia en su trabajo."</p>
-                    .</p>
-                    <div class="recomendacion-info">
-                        <p class="amigo">Allan Cruz</p>
-                        <p class="cargo">Un poco introvertido pero buen compañero</p>
-                    </div>                    
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Mensaje 1
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="imagen" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h5>Nombre</h5>
+                                    <p>Estudiante</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Mensaje 2                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="imagen" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h5>Nombre</h5>
+                                    <p>Estudiante</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                Mensaje 3                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="imagen" alt="Client" class="img-fluid">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h5>Nombre</h5>
+                                    <p>Estudiante</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-            <!-- 
-            <div class="carousel-item">
-                <div class="container">
-                    <img src="./images/squirrel.png" class="recomendacion-imagen rounded-circle" alt="...">
-                    <p class="recomendacion-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum itaque sunt. Voluptas, nobis! Inventore fugit eos corrupti odit eius dolorem.</p>
-                    <div class="recomendacion-info">
-                        <p class="amigo">Woody</p>
-                        <p class="cargo">Amigo fiel</p>
-                    </div>                    
-                </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <img src="./images/squirrel.png" class="recomendacion-imagen rounded-circle" alt="...">
-                    <p class="recomendacion-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati harum itaque sunt. Voluptas, nobis! Inventore fugit eos corrupti odit eius dolorem.</p>
-                    <div class="recomendacion-info">
-                        <p class="amigo">Rexona</p>
-                        <p class="cargo">Nunca te abandona</p>
-                    </div>                    
-                </div>
-            </div>
-            -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones"  data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones"  data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contactme" class="contact section-oscura">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="container text-center rectangulo d-flex justify-content-evenly">
-                <div class="row">
-                    <div class="col-12 col-md-4 seccion-titulo">
-                        "¡Hablemos!"
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Ubicación</h5>
+                                <p>Madrid, España</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p>tucorreo@ejemplo.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Teléfono</h5>
+                                <p>+34 600 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Sitio Web</h5>
+                                <p>www.tusitio.com</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="font-family:'Permanent Marker', cursive" class="col-12 col-md-4 description">
-                        "Siempre busco aprender y crecer."
-                    </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <a href="mailto:">
-                            <button type="button">
-                                omarjimenezher@gmail.com
-                                <i class="bi-envelope-check"></i>
-                            </button>
-                        </a>                        
-                    </div>                    
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Tu Nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Tu Email">
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Asunto">
+                        <textarea class="form-control" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
-        <img class="footer-icon" src="./images/foto_perfil.png" alt="Logo profile">
-        <p style="font-family:'Bebas Neue',cursive" class="footer-text text-center">
-            "Cada paso que das te acerca a tu meta.  <br> Nunca subestimes el poder de tu perseverancia." 🌟
-        </p>
-        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna de logo y texto -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="footer-logo text-white font-weight-bold d-block mb-3">Portafolio</a>
+                    <p class="footer-text mb-3">
+                        Desarrollador web con pasión por crear experiencias digitales excepcionales que combinan diseño atractivo y funcionalidad impecable.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white mr-3" style="font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-3" style="font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-3" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white mr-3" style="font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna de enlaces útiles -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-title mb-4 text-white font-weight-bold">Enlaces Útiles</h3>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#home" class="text-white">Inicio</a></li>
+                        <li><a href="#about" class="text-white">Sobre Mí</a></li>
+                        <li><a href="#projects" class="text-white">Proyectos</a></li>
+                        <li><a href="#references" class="text-white">Referencias</a></li>
+                        <li><a href="#contact" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
             
-            <a href=https://www.facebook.com/share/1BM9hK3EWG/ target="_blank" rel="noopener noreferrer">
-                <i class="bi-facebook"></i>
-            </a>
-            <a href=https://github.com/Omar-art32 target="_blank" rel="noopener noreferrer">
-                <i class="bi-github"></i>
-            </a>
-            <a href=www.linkedin.com/in/omar-jiménez-12228b224 target="_blank" rel="noopener noreferrer">
-                <i class="bi-linkedin"></i>
-            </a>
-            <a href=https://www.instagram.com/omar_jh04/profilecard/?igsh=MTl2NTFvMno5bDVqOA== target="_blank" rel="noopener noreferrer">
-                <i class="bi-instagram"></i>
-            
+                <!-- Columna de contacto o más información (opcional) -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-title mb-4 text-white font-weight-bold">Contacto</h3>
+                    <p class="footer-text mb-3">Email: omarjimenezher@gmail.com</p>
+                    <p class="footer-text">Teléfono: +52 964 208 2366</p>
+                </div>
+            </div>
+        
+            <!-- Copyright -->
+            <div class="copyright text-center mt-4">
+                <p>&copy; 2025 Omar Jiménez. Todos los derechos reservados.</p>
+            </div>
         </div>
-        <div class="author"> omarjimnezher@gmail.com (2024) &#169; </div>
     </footer>
 
 
