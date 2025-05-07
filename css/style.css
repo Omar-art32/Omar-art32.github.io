@@ -23,7 +23,7 @@ body {
   .hero-img img {
     animation: flotar 1s ease-in-out infinite alternate;
     width: 500px;
-    height: 500px;
+    height: 450px;
     object-fit: cover; /* asegura que la imagen se adapte bien */
     border-radius: 23%; /* la hace circular */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* sombra elegante */
