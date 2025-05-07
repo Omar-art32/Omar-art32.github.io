@@ -1,9 +1,9 @@
 
 :root {
-    --primary-color: #6c63ff;
+    --primary-color: #ff0202;
     --secondary-color: #3f3d56;
     --accent-color: #ff6584;
-    --light-color: #f8f9fa;
+    --light-color: #f8f9fa36;
     --dark-color: #212529;
 }
 
@@ -14,6 +14,42 @@ body {
     background-color: var(--light-color);
     scroll-behavior: smooth;
 }
+/*imagen perfil*/
+
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+  .hero-img img {
+    animation: flotar 1s ease-in-out infinite alternate;
+    width: 500px;
+    height: 500px;
+    object-fit: cover; /* asegura que la imagen se adapte bien */
+    border-radius: 23%; /* la hace circular */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* sombra elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+.hero-img img:hover {
+    transform: scale(6.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.typing {
+    width: 20ch;
+    animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+@keyframes typing {
+from { width: 0 }
+    to { width: 20ch }
+} 
+@keyframes blink {
+    50% { border-color: transparent }
+}  
 
 /* Preloader */
 .preloader {
@@ -40,6 +76,17 @@ body {
     to { transform: rotate(360deg); }
 }
 
+.portfolio-img {
+    border-radius: 12px;         /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+  }
+  
+  .portfolio-img:hover {
+    transform: scale(1.05);      /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  }
+  
 
 /* Navbar */
 .navbar {
@@ -199,12 +246,16 @@ body {
     border-radius: 2px;
 }
 
+/*about me*/
 .about-img {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    filter: brightness(100%) opacity(7.9);
+    transition: filter 0.3s ease;
+  }
+  
+
 
 .about-content h3 {
     font-size: 2rem;
@@ -242,11 +293,11 @@ body {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .service-card {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -315,6 +366,8 @@ body {
 
 .portfolio-img {
     transition: all 0.5s ease;
+    width: 100%;
+    height: 250px; /* o el alto que tú prefieras */
 }
 
 .portfolio-overlay {
@@ -712,3 +765,4 @@ body {
         background-color: rgba(255, 255, 255, 0.9);
         transform: translateY(-3px);
     }
+
