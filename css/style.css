@@ -28,7 +28,7 @@ body {
     border-radius: 23%; /* la hace circular */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* sombra elegante */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 20%;
+    margin-top: 0%;
   }
 
 .hero-img img:hover {
@@ -219,7 +219,7 @@ from { width: 0 }
 
 /* About Section */
 .about {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .section-title {
@@ -331,7 +331,7 @@ from { width: 0 }
 
 /* Projects Section */
 .projects {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .portfolio-filter {
@@ -444,7 +444,7 @@ from { width: 0 }
 
        /* References Section */
        .references {
-        padding: 100px 0;
+        padding: 50px 0;
         background-color: #f8f9fa;
     }
     
@@ -497,7 +497,7 @@ from { width: 0 }
 
     /* Contact Section */
     .contact {
-        padding: 100px 0;
+        padding: 50px 0;
     }
     
     .contact-info-item {
@@ -767,3 +767,24 @@ from { width: 0 }
         transform: translateY(-3px);
     }
 
+/* Fuerza el ajuste al viewport y evita desbordamiento */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* ¡Clave! */
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que las secciones usen el ancho completo */
+section {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Corrige posibles márgenes negativos en móvil */
+@media (max-width: 768px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
